@@ -30,7 +30,71 @@ Aplikacja _**Scouts**_ umożliwia zbieranie danych o graczach piłki nożnej ora
 17. Przeglądanie listy raportów.
 18. Edytowanie istniejących raportów i zapisywanie zmian.
 19. Rozpoczynanie meczu.
-### Ocena interfejsu
+
+Ponadto uzupełniłabym aplikację o poniższe funkcjonalności, które mogłyby być przydatne:
+1. Możliwość kasowania graczy/meczy/raportów.
+2. Możliwość sortowania/filtrowania meczy/raportów.
+3. Funkcja zapisywania wersji roboczych przy dodawaniu graczy/meczy/raportów.
+### Ocena interfejsu aplikacji
+1. Interfejs jest bardzo prosty, ale dla mnie mało atrakcyjny :wink:
+2. Strona główna z poziomu przeglądarki komputera zawiera bardzo dużo pustej przestrzeni, poszczególne "kafelki" usytuowane są głównie w górnej części panelu.
+3. Menu po lewej stronie nie jest przejrzyste, wszystko jest wypisane jedno pod drugim. Wydaje mi się, że czytelniej byłoby jakby poszczególne zagnieżdzenia były wcięte z lewej strony, żeby widać było, że są podstroną.
+4. Tekst w polach wyświetlanych na listach nie zawija się/nie przenosi do kolejnej linijki (np. długa nazwa klubu gracza powoduje, że cała kolumna robi się bardzo szeroka, co powoduje, że musimy przesuwać całą listę w prawo/w lewo, a przez to źle się ją czyta i źle to wygląda).
+5. Zakładki dotyczące meczy i raportów są mało czytelne jeśli przeglądamy je z poziomu telefonu (dużo przesuwania na boki, część kolumn np. z datami ściska się i data jest w trzech wierszach co jest nieczytelne, albo odwrotnie rozciąga się za bardzo, co również utrudnia przeglądanie danych).
 ### Czy aplikacja jest intuicyjna?
+Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony lupy, kosza czy gwaizdki w polach wymaganych), ale sporo jest rzeczy, które na pierwszy rzut oka ciężko rozgryźć. Według mnie poniższe miejsca NIE są intuicyjne:
+1. Strona główna zawiera kafelki ze statystykami, ale brakuje opisów. Nie jest oczywiste czym jest _Ilość akcji_? Skąd jest ta liczba?
+2. Po wybraniu akcji _Rozpocznij mecz_ przenosimy się do strony, gdzie nie ma żadnej instrukcji jak się poruszać, brakuje opisu poszczególnych przycisków.
+3. W trakcie rozgrywania meczu można wysłać raport - pojawia się komunikat _Wysłano poprawnie raport_, ale ciężko stwierdzić gdzie ten raport został wysłany. Nie widać go na liście raportów danego gracza.
+4. Brakuje przycisku do edycji graczy - nie każdy domyśli się, że trzeba kliknąć w wiersz z danym graczem aby rozpocząć edycję. 
+5. Edytownie bądź dodawania gracza:
+    * Nie ma żadnego przycisku _Anuluj_ czy _Wróć_, intuicyjnie byłoby mieć taki przycisk żeby wrócić do poprzedniej strony.
+    * Przycisk _Clear_ - sugeruje wyczyszczenie całego formularza, ale tak się nie dzieje w momencie gdy np. edytujemy gracza. Czyszczone są tylko dane, które dodaliśmy przed chwilą. Więc nie do końca jestem przekonana o intuicyjności tego przycisku.
+    * Pola _Łączy nas piłka_ oraz _90 minut_ - nie rozumiem do czego one służą :slightly_smiling_face:
+    * Pole _Telefon_ - nie wiadomo w jakiej formie ma zostać wpisany, czy jako ciąg znaków czy z kierunkowym kraju czy bez. Zasugerowałabym tu sztywny format, w którym należy wprowadzić numer telefonu.
+6. Pole _Search_ w widoku listy graczy szuka we wszystkich parametrach gracza - nawet tych widocznych dopiero w szczegółach. Na początku nie było to dla mnie jasne i myślałam, że wyszukiwarka źle działa, bo w pokazanych wynikach na pierwszy rzut oka nie było tego czego szukałam.
+7. Pola _Web match_, _General_ czy _Rating_ w zakładce edycji/dodawania meczy - nie rozumiem co należy wpisać w tych polach, brakuje objaśnienia.
 ### Błędy
+1. Podczas logowania, mimo wybrania języka polskiego komunikat o wprowadzeniu błędnego hasła lub nie wprowadzeniu go w ogóle pojawia się w języku angielskim.
+2. Mimo tego, że wybrany mamy język polski, to w zakładce _Gracze_ w prawym górnym rogu listy opisy ikon są po angielsku tj. _Download CSV, Print, View Columns, Filter Table_.
+3. Po wyeksportowaniu listy graczy do pliku CSV widać, że dane w pliku nie zawierają polskich znaków.
+4. Po wyeksportowaniu listy graczy do pliku CSV widać, że "wypluwa" również dane, które nie są prezentowane w tabeli. W pliku CSV widać to jako [object Object], a w Devtoolsach można zobaczyć, że są to dane jeszcze bardziej zagnieżdżone.
+5. W widoku listy graczy, kolumna _Pozycja_ - brak ujednoliconego nazewnictwa, nie wiadomo do którego pola się odnosi - czy do _Pozycja główna_ czy _Pozycja alternatywna_.
+6. W widoku listy graczy, po przejściu do _Filter Table_ mamy wymieszane dane/filtry w różnych językach - część jest po polsku (imię, nazwisko, pozycja, klub), a część po angielsku (age, rate). Przyciski na górze okna  _Filters_ i _Reset_ też są po angielsku, pomimo, że mamy wybrany język polski w menu po lewej stronie.
+7. W widoku listy graczy, po przejściu do _Filter Table_ mamy pole _Rate_ natomiast w tabeli nagłówek brzmi _Rating_. Nazwy nie są spójne.
+8. W widoku listy graczy mimo wyboru języka polskiego w polu do wyszukiwania wciąż jest angielskie _Search_.
+9. Jeżeli skorzystamy z funkcji wyszukiwania graczy (widok listy graczy) i otrzymamy więcej wyników niż 10, to w momencie jak chcemy przejść na kolejną stronę wyszukanych wyników, to aplikacja zamiast pokazać kolejne wyniki dopasowane do tego czego szukaliśmy przeskakuje na pełną listę graczy nie uwzględniając naszego wyszukiwanego słowa.
+10. W widoku listy graczy nie można sortować po parametrach wyszukanych wyników. Tzn. jak zawęzimy wyniki do wyszukanego parametru to przy próbie posortowania ich po np. wieku, wskakują znowu wszystkie rekordy z bazy.
+11. Sortowanie graczy - sortując graczy np. po wieku od najstarszego do najmłodszego (bądź odwrotnie), w momencie jak zrestartujemy sortowanie strzałka z ostatnim naszym sortowaniem dalej jest wyświetlana mimo tego, że aplikacja już nie sortuje wyników. Dopiero odświeżenie strony sprawia, że strzałka "znika".
+12. Edytowanie/dodawanie nowego gracza:
+    * Pomimo wybranego języka polskiego przyciski _Submit_ i _Clear_ są w języku angielskim.
+    * Pomimo wybranego języka polskiego w momencie nie uzupełnienia wymaganych pól z gwiazdką, komunikat na czerwono pojawia się w języku angielskim.
+    * Pomimo wybrania języka angielskiego pola _Łączy nas piłka_ i _90 minut_ są wciąż w języku polskim.
+    * Pole _Waga_ - brakuje informacji o jednostce w jakiej powinniśmy podać wagę gracza.
+    * Apliakcja pozwala w polach wpisać tylko spację i traktuje to już jak uzupełnione pole. W ten spoób można obejść i tak naprawdę nie uzupłenić pól wymaganych.
+13. Klikając przycisk _Dodaj raport_ w zakładce z raportami strona przenosi nas do zakładki z meczami, a powinna otworzyć nam okno do tworzenia raportu.
+14. Tworzenie raportu z poziomu listy meczy:
+    * W pierwszym oknie, które pojawia się po kliknięciu w przycisk _Dodaj raport_ mamy dwa przyciski _Submit_ i _Clear_ - po pierwsze są po angielsku, a mamy ustawiony język polski, a po drugie przycik _Clear_ nie wywołuje żadnej akcji.
+    * Pomimo wybranego języka polskiego, w arkuszu mamy angielskie nazewnictwo - wszystkie opisy ikon dotyczących formatowania teksu + informacja o wpisaniu tekstu (_Enter some text…_).
+15. Dodawanie/edytowanie meczu dla gracza:
+    * Przyciski _Clear_ i _Submit_ niezmiennie są w języku angielskim, pomimo wybrania w menu języka polskiego.
+    * Mimo wybranego języka polskiego pola _Web match_ oraz _General_ są po angielsku.
+    * Pomimo wybranego języka polskiego w momencie nie uzupełnienia wymaganych pól z gwiazdką, komunikat na czerwono pojawia się w języku angielskim.
+    * Pole _Czas gry_ pozwala na wprowadzenie ujemnych wartości, brakuje jednostki, w której należy wprowadzić czas (sekundy? minuty? godziny?).
+    * Pole _Numer_ pozwala na wprowadzenie ujemnych wartości
+    * Jeżeli wybierzemy język angielski to w kolumnie _Akcje_ pod ikoną piłki widnieje opis _Start report_, zaś w polskiej wersji mamy _Rozpocznij mecz_. Opisy nie są tożsame.
+
+Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale warto byłoby je poprawić, bo wpływają na jakość aplikacji:
+1. Edytowanie/dodawanie gracza:
+    * W momencie gdy system nie pozwala zapisać formularza, ponieważ jest w nim błąd wyświetla się jedynie komunikat _Nie udało się zaktualizować gracza_, ale żadne pole się nie podświetla, więc użytkownikowi ciężko będzie namierzyć gdzie jest błąd/w którym polu. Dotyczy to błędu w polach, które nie są wymagane.
+    * W polach _Imię_ i _Nazwisko_ można wprowadzać również cyfry, raczej powinno być ograniczenie do liter.
+    * Pole _Telefon_ nie ma żadnego sztywnego formatu, żeby ujednolicić formę wprowadzania numeru telefonu dla każdego gracza.
+    * Pole _Waga_ i _Wzrost_ nie ma ograniczeń, można wprowadzić ujemną wartość bądź nierealnie wysoką
+    * Pole _Data urodzenia_ nie ma ograniczeń, można podać datę urodzenia dzisiejszą, z przyszłości albo sprzed kilkuset lat.
+    * Pole _Główna pozycja_ i _Pozycja alternatywna_ - zrobiłabym tu listy rozwijane z możliwością wyboru konkretnej opcji, żeby nie wpisywać tej samej pozycji na różne sposoby.
+    * Pole _Link do YouTube_ - dobrze żeby było faktycznie linkiem tzn. klikamy w link i przenosi nas od razu na stronę, a nie, że musimy go skopiować i wkleić w oknie przeglądarki.
+2. Pole _Recenzja_ przy tworzeniu raportów czy meczy powinno być z gwiazdką jako pole wymagane, bo potem w kolumnie _Recenzja_ wyświetlanej na liście graczy jest średnia recenzji uzyskanych w meczach. Więc żeby ta dana miała jakąś wartość moim zdaniem powinna być wymagana. 
+3. Do zastanowienia czy faktycznie możliwość tworzenia kilku raportów do jednego meczu jest prawidłowa.
+4. Do zastanowienia czy pola podczas edycji/dodawaniu graczy/meczy/raportów nie powinny mieć ograniczonej liczby znaków.
+
 
