@@ -97,4 +97,20 @@ Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale war
 3. Do zastanowienia czy faktycznie możliwość tworzenia kilku raportów do jednego meczu jest prawidłowa.
 4. Do zastanowienia czy pola podczas edycji/dodawaniu graczy/meczy/raportów nie powinny mieć ograniczonej liczby znaków.
 
+# TASK 2
+## Subtask 1
+### [Pisanie przypadków testowych na podstawie User Story](https://docs.google.com/spreadsheets/d/1VCoaE2dRgetyU_NoNEZ7naqbTMhlM8Te/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
+## Subtask 2
+### [Pisanie przypadków testowych na podstawie “własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1_wQmoDmWLG3PKkCRIPzUGjysDMefc4K_/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
+## Subtask 3
+### Po co piszemy test case’y?
+Pisanie przypadków testowych pozwala:
+* udokumentować w czytelny sposób różne możliwości obsłużenia modułów w ramach danej aplikacji,
+* testować funkcjonalności,
+* zaplanować scenariusz, który chcielibyśmy przetestować,
+* tworzyć raporty z wykonywanych testów,
+* tworzyć źródło informacji o danej aplikacji,
+* wykorzystywać je później np. do testów akceptacyjnych,
+* wielokrotnie uruchamiać testy regresji.
+
 
