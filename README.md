@@ -100,6 +100,7 @@ Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale war
 # TASK 2
 ## Subtask 1
 ### [Pisanie przypadków testowych na podstawie User Story](https://docs.google.com/spreadsheets/d/1VCoaE2dRgetyU_NoNEZ7naqbTMhlM8Te/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
+Przypadki testowe do każdego User Story znajdują się w osobnych arkuszach.
 ## Subtask 2
 ### [Pisanie przypadków testowych na podstawie “własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1_wQmoDmWLG3PKkCRIPzUGjysDMefc4K_/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
 ## Subtask 3
