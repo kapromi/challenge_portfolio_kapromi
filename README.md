@@ -120,5 +120,5 @@ Pisanie przypadków testowych pozwala:
 ## Subtask 2
 ### [Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
 ## Subtask 3
-### [Raport z wykonanych testów(https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
+### [Raport z wykonanych testów](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
