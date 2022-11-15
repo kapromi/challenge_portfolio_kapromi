@@ -116,9 +116,9 @@ Pisanie przypadków testowych pozwala:
 
 # TASK 3
 ## Subtask 1
-[Formatka do zgłaszania błędów](https://docs.google.com/spreadsheets/d/1-4lGA37yqhxEcCGebnjHd-BQaUX-NjgK/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
+###[Formatka do zgłaszania błędów](https://docs.google.com/spreadsheets/d/1-4lGA37yqhxEcCGebnjHd-BQaUX-NjgK/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
 ## Subtask 2
-[Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
-### Subtask 3
-[Raport z wykonanych testów(https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
+###[Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
+## Subtask 3
+###[Raport z wykonanych testów(https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
