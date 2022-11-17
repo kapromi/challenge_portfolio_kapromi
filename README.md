@@ -13,23 +13,24 @@ Aplikacja _**Scouts**_ umożliwia zbieranie danych o graczach piłki nożnej ora
 ### Funkcjonalności aplikacji i propozycje usprawnienia
 1. Logowanie i wylogowanie do/z aplikacji.
 2. Ustawienie języka aplikacji - polski lub angielski.
-3. Podgląd ostatnich 5 aktywności w aplikacji.
-4. Dodawania nowych graczy -  obecnie jest możliwe tylko ze strony głównej - dodałabym przycisk _dodaj gracza_ również z poziomu zakładki _Gracze_ gdzie mamy możliwość ich przeglądania (tak żeby nie trzeba było wracać za każdym razem do strony głównej).
-5. Przeglądanie listy graczy wprowadzonych do bazy - w prawym dolnym rogu listy, gdzie mamy informację o ilości wyświetlanych wyników na stronie i ilości wszystkich wyników, dodałabym możliwość przejścia od razu do pierwszej bądź ostatniej strony oraz możliwość wpisania konkretnego numeru strony, żeby np. mieć możliwość od razu przenieść się na stronę 50, a nie "przeklikiwać" się 50 razy. Przydatna byłaby tez możliwość wyświetlania na jednej stronie więcej niż 10 wyników.
-6. Wyszukiwanie graczy po dowolnym ciągu znaków.
-7. Sortowanie listy graczy po wybranych parametrach.
-8. Eksport listy graczy do pliku CSV - zmieniłabym bym to, żeby eksportowała się cała lista wyników (wszystkie podstrony, a nie tylko ta, którą widzimy).
-9. Drukowanie listy graczy - wydruk listy graczy jest mało czytelny, moim zdaniem lepszym rozwiązaniem byłby wydruk listy graczy w takiej formie jaką widzimy na stronie, taki sam układ kolumn i wierszy. Obecnie nazwy kolumn przenoszą się do wierszy i są powtarzane dla każdego gracza. Przez to lista 10 graczy, która spokojnie zmieściła by się na stronie A4, drukuje się na 6 stronach.
-10. Wyłączanie/włączanie poszczególnych kolumn z widoku listy graczy - w szczegółach gracza widać, że mamy tam dużo więcej parametrów, dodałabym więc tutaj możliwość włączania kolumn również z innymi istotnymi parametrami jak np. główna/alternatywna pozycja, dominująca noga, waga, wzrost, email, telefon, województwo.
-11. Filtrowanie graczy po wybranych parametrach - dodałabym możliwość filtrowania po wszystkich parametrach jakie są dostępne. Obecnie nie ma możliwości filtrowania np. po ilości meczy czy ilości raportów.
-12. Edytowanie istniejących graczy i zapisywanie zmian.
-13. Przeglądanie listy meczy, w których brał udział dany zawodnik.
-14. Dodawanie meczy dla danego gracza.
-15. Edytowanie meczy dla danego gracza i zapisywanie zmian.
-16. Tworzenie raportów dla meczu (do jednego meczu można stworzyć więcej niż jeden raport).
-17. Przeglądanie listy raportów.
-18. Edytowanie istniejących raportów i zapisywanie zmian.
-19. Rozpoczynanie meczu.
+3. Przypominanie hasła do konta.
+4. Podgląd ostatnich 5 aktywności w aplikacji.
+5. Dodawania nowych graczy -  obecnie jest możliwe tylko ze strony głównej - dodałabym przycisk _dodaj gracza_ również z poziomu zakładki _Gracze_ gdzie mamy możliwość ich przeglądania (tak żeby nie trzeba było wracać za każdym razem do strony głównej).
+6. Przeglądanie listy graczy wprowadzonych do bazy - w prawym dolnym rogu listy, gdzie mamy informację o ilości wyświetlanych wyników na stronie i ilości wszystkich wyników, dodałabym możliwość przejścia od razu do pierwszej bądź ostatniej strony oraz możliwość wpisania konkretnego numeru strony, żeby np. mieć możliwość od razu przenieść się na stronę 50, a nie "przeklikiwać" się 50 razy. Przydatna byłaby tez możliwość wyświetlania na jednej stronie więcej niż 10 wyników.
+7. Wyszukiwanie graczy po dowolnym ciągu znaków.
+8. Sortowanie listy graczy po wybranych parametrach.
+9. Eksport listy graczy do pliku CSV - zmieniłabym bym to, żeby eksportowała się cała lista wyników (wszystkie podstrony, a nie tylko ta, którą widzimy).
+10. Drukowanie listy graczy - wydruk listy graczy jest mało czytelny, moim zdaniem lepszym rozwiązaniem byłby wydruk listy graczy w takiej formie jaką widzimy na stronie, taki sam układ kolumn i wierszy. Obecnie nazwy kolumn przenoszą się do wierszy i są powtarzane dla każdego gracza. Przez to lista 10 graczy, która spokojnie zmieściła by się na stronie A4, drukuje się na 6 stronach.
+11. Wyłączanie/włączanie poszczególnych kolumn z widoku listy graczy - w szczegółach gracza widać, że mamy tam dużo więcej parametrów, dodałabym więc tutaj możliwość włączania kolumn również z innymi istotnymi parametrami jak np. główna/alternatywna pozycja, dominująca noga, waga, wzrost, email, telefon, województwo.
+12. Filtrowanie graczy po wybranych parametrach - dodałabym możliwość filtrowania po wszystkich parametrach jakie są dostępne. Obecnie nie ma możliwości filtrowania np. po ilości meczy czy ilości raportów.
+13. Edytowanie istniejących graczy i zapisywanie zmian.
+14. Przeglądanie listy meczy, w których brał udział dany zawodnik.
+15. Dodawanie meczy dla danego gracza.
+16. Edytowanie meczy dla danego gracza i zapisywanie zmian.
+17. Tworzenie raportów dla meczu (do jednego meczu można stworzyć więcej niż jeden raport).
+18. Przeglądanie listy raportów.
+19. Edytowanie istniejących raportów i zapisywanie zmian.
+20. Rozpoczynanie meczu.
 
 Ponadto uzupełniłabym aplikację o poniższe funkcjonalności, które mogłyby być przydatne:
 1. Możliwość kasowania graczy/meczy/raportów.
@@ -89,7 +90,9 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
     * Jeżeli wybierzemy język angielski to w kolumnie _Akcje_ pod ikoną piłki widnieje opis _Start report_, zaś w polskiej wersji mamy _Rozpocznij mecz_. Opisy nie są tożsame.
     
     ![screen](https://user-images.githubusercontent.com/115890906/202544224-35dd72c3-627d-4352-80db-2afeec1bf2d2.png)
+16. Literówki na pierwszej stronie po zalogowaniu.
 
+   ![screen](https://user-images.githubusercontent.com/115890906/202570385-3d596499-c8af-42a1-b332-f2a162627395.png)
 
 Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale warto byłoby je poprawić, bo wpływają na jakość aplikacji:
 1. Edytowanie/dodawanie gracza:
