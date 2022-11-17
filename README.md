@@ -58,14 +58,18 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
 1. Podczas logowania, mimo wybrania języka polskiego komunikat o wprowadzeniu błędnego hasła lub nie wprowadzeniu go w ogóle pojawia się w języku angielskim.
 2. Mimo tego, że wybrany mamy język polski, to w zakładce _Gracze_ w prawym górnym rogu listy opisy ikon są po angielsku tj. _Download CSV, Print, View Columns, Filter Table_.
 3. Po wyeksportowaniu listy graczy do pliku CSV widać, że dane w pliku nie zawierają polskich znaków.
+![screen](https://user-images.githubusercontent.com/115890906/202542759-a267bfac-5da3-4711-bb1a-dda6b8936101.png)
 4. Po wyeksportowaniu listy graczy do pliku CSV widać, że "wypluwa" również dane, które nie są prezentowane w tabeli. W pliku CSV widać to jako [object Object], a w Devtoolsach można zobaczyć, że są to dane jeszcze bardziej zagnieżdżone.
+![screen](https://user-images.githubusercontent.com/115890906/202544080-c8a1b714-2ee3-45ca-bb35-e409fb51e470.png)
 5. W widoku listy graczy, kolumna _Pozycja_ - brak ujednoliconego nazewnictwa, nie wiadomo do którego pola się odnosi - czy do _Pozycja główna_ czy _Pozycja alternatywna_.
 6. W widoku listy graczy, po przejściu do _Filter Table_ mamy wymieszane dane/filtry w różnych językach - część jest po polsku (imię, nazwisko, pozycja, klub), a część po angielsku (age, rate). Przyciski na górze okna  _Filters_ i _Reset_ też są po angielsku, pomimo, że mamy wybrany język polski w menu po lewej stronie.
+![screen](https://user-images.githubusercontent.com/115890906/202544148-9a99338e-0e75-428d-bdf7-1fd8176d62f7.png)
 7. W widoku listy graczy, po przejściu do _Filter Table_ mamy pole _Rate_ natomiast w tabeli nagłówek brzmi _Rating_. Nazwy nie są spójne.
 8. W widoku listy graczy mimo wyboru języka polskiego w polu do wyszukiwania wciąż jest angielskie _Search_.
 9. Jeżeli skorzystamy z funkcji wyszukiwania graczy (widok listy graczy) i otrzymamy więcej wyników niż 10, to w momencie jak chcemy przejść na kolejną stronę wyszukanych wyników, to aplikacja zamiast pokazać kolejne wyniki dopasowane do tego czego szukaliśmy przeskakuje na pełną listę graczy nie uwzględniając naszego wyszukiwanego słowa.
 10. W widoku listy graczy nie można sortować po parametrach wyszukanych wyników. Tzn. jak zawęzimy wyniki do wyszukanego parametru to przy próbie posortowania ich po np. wieku, wskakują znowu wszystkie rekordy z bazy.
 11. Sortowanie graczy - sortując graczy np. po wieku od najstarszego do najmłodszego (bądź odwrotnie), w momencie jak zrestartujemy sortowanie strzałka z ostatnim naszym sortowaniem dalej jest wyświetlana mimo tego, że aplikacja już nie sortuje wyników. Dopiero odświeżenie strony sprawia, że strzałka "znika".
+![screen](https://user-images.githubusercontent.com/115890906/202544819-a2789ade-d171-4e15-b9f6-959a98ca0907.png)
 12. Edytowanie/dodawanie nowego gracza:
     * Pomimo wybranego języka polskiego przyciski _Submit_ i _Clear_ są w języku angielskim.
     * Pomimo wybranego języka polskiego w momencie nie uzupełnienia wymaganych pól z gwiazdką, komunikat na czerwono pojawia się w języku angielskim.
@@ -83,6 +87,9 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
     * Pole _Czas gry_ pozwala na wprowadzenie ujemnych wartości, brakuje jednostki, w której należy wprowadzić czas (sekundy? minuty? godziny?).
     * Pole _Numer_ pozwala na wprowadzenie ujemnych wartości
     * Jeżeli wybierzemy język angielski to w kolumnie _Akcje_ pod ikoną piłki widnieje opis _Start report_, zaś w polskiej wersji mamy _Rozpocznij mecz_. Opisy nie są tożsame.
+    
+    ![screen](https://user-images.githubusercontent.com/115890906/202544224-35dd72c3-627d-4352-80db-2afeec1bf2d2.png)
+
 
 Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale warto byłoby je poprawić, bo wpływają na jakość aplikacji:
 1. Edytowanie/dodawanie gracza:
@@ -122,3 +129,8 @@ Pisanie przypadków testowych pozwala:
 ## Subtask 3
 ### [Raport z wykonanych testów](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
+# TASK 4 
+## Subtask 2
+### Testowanie eksploracyjne i raportowanie błędów
+## Subtask 3
+### Do czego służy aplikacja?
