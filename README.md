@@ -131,6 +131,6 @@ Pisanie przypadków testowych pozwala:
 
 # TASK 4 
 ## Subtask 2
-### Testowanie eksploracyjne i raportowanie błędów
+### [Testowanie eksploracyjne i raportowanie błędów](https://docs.google.com/spreadsheets/d/11947aPg4jHtUeIBJJhDxFLuqKBvjF7U4/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
 ## Subtask 3
 ### Do czego służy aplikacja?
