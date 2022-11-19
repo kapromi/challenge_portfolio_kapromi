@@ -92,7 +92,7 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
     ![screen](https://user-images.githubusercontent.com/115890906/202544224-35dd72c3-627d-4352-80db-2afeec1bf2d2.png)
 16. Literówki na pierwszej stronie po zalogowaniu.
 
-   ![screen](https://user-images.githubusercontent.com/115890906/202570385-3d596499-c8af-42a1-b332-f2a162627395.png)
+      ![screen](https://user-images.githubusercontent.com/115890906/202570385-3d596499-c8af-42a1-b332-f2a162627395.png)
 
 Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale warto byłoby je poprawić, bo wpływają na jakość aplikacji:
 1. Edytowanie/dodawanie gracza:
@@ -136,4 +136,22 @@ Pisanie przypadków testowych pozwala:
 ## Subtask 2
 ### [Testowanie eksploracyjne i raportowanie błędów](https://docs.google.com/spreadsheets/d/11947aPg4jHtUeIBJJhDxFLuqKBvjF7U4/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
 ## Subtask 3
-### Do czego służy aplikacja?
+### 1. Do czego służy aplikacja Focusly? Jaki jest jej cel?
+Aplikacja Focusly ma na celu wspierać na co dzień użytkowników w osiągnięciu wewnętrznej równowagi oraz edukować w wybranych przez nich obszarach. Aplikacja służy do:
+* przeglądania treści z wybranych kategorii
+* praktykowania ćwiczeń oddechowych
+* słuchania relaksacyjnej muzyki 
+* monitorowania swoich postępów
+### 2. Kto ma być użytkownikiem końcowym aplikacji?
+* Osoby żyjące w ciągłym stresie.
+* Osoby, które chcą osiągnąć wewnętrzny spokój/ciszę/równowagę.
+* Osoby, które poszukują pozytywnych zmian w swoim życiu.
+* Osoby, które chcą nad sobą pracować.
+### 3. Czy według Ciebie aplikacja jest user-friendly?
+Moim zdaniem aplikacja jest przyjazna użytkownikowi, łatwo i intuicyjnie można się po niej poruszać. Przyciski znajdują się w standardowych miejscach. Wydaje mi się, że osoba posługująca się na co dzień smartfonem i korzystająca z jakichkolwiek innych aplikacji nie powinna mieć problemu z poruszaniem się po Focusly. Wykorzystane kolory są przyjemne dla oka, zgaszone i wyciszające, tym samym nawiązują do idei aplikacji. 
+Jedyną rzeczą, która mi osobiście przeszkadza, to to, że pomiędzy ekranami można przechodzić również przesuwając palcem z prawej do lewej strony (bądź odwrotnie). W związku z tym, że na poszczególnych ekranach znajdują się również inne treści, które można przesuwać "w poziomie", to czasami chcąc przejrzeć coś w ramach jednego ekranu, przeskakujemy do kolejnego ekranu (dokładnie widać to na [tym filmiku](https://drive.google.com/file/d/128csSK3PX7p1QGazWJBzk-lJV4wUstDq/view?usp=share_link).
+### 4. Jak byś usprawnił aplikację? Co byś poprawił? Czy masz pomysł na dodatkową funkcjonalność?
+Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bardzo dużo aplikacji posiada taką możliwość, a to dużo przyspiesza i usprawnia proces rejestracji użytkownikom Google.
+### 5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
+* Przy testach aplikacji natywnych istotne jest samo urządzenie, na którym testujemy 
+
