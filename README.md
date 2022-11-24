@@ -159,3 +159,4 @@ Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bar
 * Przy testowaniu aplikacji webowej adres aplikacji wpisujemy do przeglądarki, zaś przy aplikacjach natywnych pobieramy aplikację na urządzenie.
 ## Subtask 4
 ### [Testowanie aplikacji mobilnej i webowej w grupie](https://qa768.atlassian.net/jira/software/projects/QAC/boards/1)
+Zgłaszanie błędów z wykorzystaniem Jiry.
