@@ -156,5 +156,6 @@ Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bar
 * Korzystamy z innych narzędzi - przy testach aplikacji internetowej mamy dostęp np. do DevTools, dzięki, którym widzimy chociażby wysyłane przez stronę requesty. Przy testowaniu aplikacji natywnej nie mamy takich możliwości, dostęp do takich informacji jest ograniczony.
 * Przy testach aplikacji natywnych mamy o wiele więcej urządzeń do przetestowania - mamy różne platformy, ale też różne ich wersje oraz także każdy producent ma dodatkowo jeszcze swoje nakładki.
 * Przy aplikacjach natywnych wchodzi w grę bardzo dużo zmiennych takich jak chociażby zasięg operatora w danym urządzeniu czy aktualne obciążenie samego urządzenia.
+* Przy testowaniu aplikacji webowej adres aplikacji wpisujemy do przeglądarki, zaś przy aplikacjach natywnych pobieramy aplikację na urządzenie.
 ## Subtask 4
 ### [Testowanie aplikacji mobilnej i webowej w grupie](https://qa768.atlassian.net/jira/software/projects/QAC/boards/1)
