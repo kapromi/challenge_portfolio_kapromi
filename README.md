@@ -1,13 +1,15 @@
-# TASK 1
-## Subtask 1
+# TASK 1: Testy eksploracyjne
+## Subtask 1 - Wyciągamy karteczki...
 10/10 punktów :nerd_face:
-## Subtask 3
+## Subtask 2 - Dodawanie repozyterium do GitHub
+[Moje pierwsze repozyterium](https://github.com/kapromi/challenge_portfolio_kapromi)
+## Subtask 3 - Dlaczego zdecydowałaś się na udział w QA Challenge?
 Cześć, nazywam się **Karolina** i w końcu dojrzałam do decyzji, żeby nieco zboczyć z dotychczasowej ścieżki zawodowej :upside_down_face: 
 
 Lubię uczyć się nowych rzeczy i fascynują mnie nowe technologie. Już od jakiegoś czasu przeglądałam oferty kursów testerskich, więc gdy zobaczyłam informację w newsletterze Dare IT, to decyzję podjęłam praktycznie od razu. Zawsze staram się korzystać z okazji, które los podkłada mi pod nos. 
 
 Moim głównym celem jest wykorzystanie możliwości kursu na maksa. To czas dla mnie. Wierzę, że w ramach projektu pogłębie wiedzę o testowaniu, może zdobędę nowe znajomości, ale jednocześnie miło spędzę czas dobrze się bawiąc (bo ja naprawdę lubię rozwiązywać zadania!:see_no_evil:).
-## Subtask 4
+## Subtask 4 - Testy eksploracyjne - poznaj aplikację _**Scouts**_
 ### Do czego służy aplikacja? 
 Aplikacja _**Scouts**_ umożliwia zbieranie danych o graczach piłki nożnej oraz ich przeglądanie i edytowanie.
 ### Funkcjonalności aplikacji i propozycje usprawnienia
@@ -55,7 +57,7 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
     * Pole _Telefon_ - nie wiadomo w jakiej formie ma zostać wpisany, czy jako ciąg znaków czy z kierunkowym kraju czy bez. Zasugerowałabym tu sztywny format, w którym należy wprowadzić numer telefonu.
 6. Pole _Search_ w widoku listy graczy szuka we wszystkich parametrach gracza - nawet tych widocznych dopiero w szczegółach. Na początku nie było to dla mnie jasne i myślałam, że wyszukiwarka źle działa, bo w pokazanych wynikach na pierwszy rzut oka nie było tego czego szukałam.
 7. Pola _Web match_, _General_ czy _Rating_ w zakładce edycji/dodawania meczy - nie rozumiem co należy wpisać w tych polach, brakuje objaśnienia.
-### Błędy
+### Błędy znalezione podczas testowania eksploracyjnego
 1. Podczas logowania, mimo wybrania języka polskiego komunikat o wprowadzeniu błędnego hasła lub nie wprowadzeniu go w ogóle pojawia się w języku angielskim.
 2. Mimo tego, że wybrany mamy język polski, to w zakładce _Gracze_ w prawym górnym rogu listy opisy ikon są po angielsku tj. _Download CSV, Print, View Columns, Filter Table_.
 3. Po wyeksportowaniu listy graczy do pliku CSV widać, że dane w pliku nie zawierają polskich znaków.
@@ -107,15 +109,14 @@ Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale war
 3. Do zastanowienia czy faktycznie możliwość tworzenia kilku raportów do jednego meczu jest prawidłowa.
 4. Do zastanowienia czy pola podczas edycji/dodawaniu graczy/meczy/raportów nie powinny mieć ograniczonej liczby znaków.
 
-# TASK 2
-## Subtask 1
-### [Pisanie przypadków testowych na podstawie User Story](https://docs.google.com/spreadsheets/d/1VCoaE2dRgetyU_NoNEZ7naqbTMhlM8Te/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
-Przypadki testowe do każdego User Story znajdują się w osobnych arkuszach.
-## Subtask 2
-### [Pisanie przypadków testowych na podstawie “własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1_wQmoDmWLG3PKkCRIPzUGjysDMefc4K_/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
-## Subtask 3
-### Po co piszemy test case’y?
-Pisanie przypadków testowych pozwala:
+# TASK 2: Przypadki testowe (Test cases)
+## Subtask 1 - Pisanie przypadków testowych na podstawie User Story
+### [Przypadki testowe stworzone na podstawie User Story US_01 oraz US_02](https://docs.google.com/spreadsheets/d/1VCoaE2dRgetyU_NoNEZ7naqbTMhlM8Te/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
+Test cases do każdego User Story znajdują się w osobnych arkuszach.
+## Subtask 2 - Pisanie przypadków testowych na podstawie “własnych doświadczeń"
+### [Przypadki testowe stworzone na podstawie "własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1_wQmoDmWLG3PKkCRIPzUGjysDMefc4K_/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
+## Subtask 3 - Po co piszemy test case'y?
+### Pisanie przypadków testowych pozwala:
 * udokumentować w czytelny sposób różne możliwości obsłużenia modułów w ramach danej aplikacji,
 * testować funkcjonalności,
 * zaplanować scenariusz, który chcielibyśmy przetestować,
@@ -124,31 +125,32 @@ Pisanie przypadków testowych pozwala:
 * wykorzystywać je później np. do testów akceptacyjnych,
 * wielokrotnie uruchamiać testy regresji.
 
-# TASK 3
-## Subtask 1
-### [Formatka do zgłaszania błędów](https://docs.google.com/spreadsheets/d/1-4lGA37yqhxEcCGebnjHd-BQaUX-NjgK/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
-## Subtask 2
+# TASK 3: Raportowanie błędów
+## Subtask 1 - Utworzenie formatki do zgłaszania błędów
+### [Błędy w aplikacji webowej _Scouts_](https://docs.google.com/spreadsheets/d/1-4lGA37yqhxEcCGebnjHd-BQaUX-NjgK/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
+## Subtask 2 - Testowanie aplikacji webowej 
 ### [Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
-## Subtask 3
-### [Raport z wykonanych testów](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
+Testowanie aplikacji webowej _Scouts_odbyło się zgodnie z utworzonymi w ramach taska 2 przypadkami testowymi. Stworzone test case'y opierają się zarówno o User Story jak i o "własne doświadczenia".
+## Subtask 3 - Raport z wykonanych testów
+### [Krótki raport z wykonanych testów aplikacji webowej _**Scouts**_](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
-# TASK 4 
-## Subtask 2
-### [Testowanie eksploracyjne i raportowanie błędów](https://docs.google.com/spreadsheets/d/11947aPg4jHtUeIBJJhDxFLuqKBvjF7U4/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
-## Subtask 3
-### 1. Do czego służy aplikacja Focusly? Jaki jest jej cel?
-Aplikacja Focusly ma na celu wspierać na co dzień użytkowników w osiągnięciu wewnętrznej równowagi oraz edukować w wybranych przez nich obszarach. Aplikacja służy do:
-* przeglądania treści z wybranych kategorii
-* praktykowania ćwiczeń oddechowych
-* słuchania relaksacyjnej muzyki 
-* monitorowania swoich postępów
+# TASK 4: Testowanie aplikacji mobilnych
+## Subtask 1 i 2 - Testowanie eksploracyjne i raportowanie błędów
+### [Błędy w aplikacji mobilnej _Focusly_](https://docs.google.com/spreadsheets/d/11947aPg4jHtUeIBJJhDxFLuqKBvjF7U4/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
+## Subtask 3 - Aplikacja _**Focusly**_
+### 1. Do czego służy aplikacja _**Focusly**_? Jaki jest jej cel?
+Aplikacja _**Focusly**_ ma na celu wspierać na co dzień użytkowników w osiągnięciu wewnętrznej równowagi oraz edukować w wybranych przez nich obszarach. Aplikacja głównie służy do:
+* Przeglądania treści z wybranych kategorii
+* Praktykowania ćwiczeń oddechowych
+* Słuchania relaksacyjnej muzyki 
+* Monitorowania swoich postępów
 ### 2. Kto ma być użytkownikiem końcowym aplikacji?
 * Osoby żyjące w ciągłym stresie.
 * Osoby, które chcą osiągnąć wewnętrzny spokój/ciszę/równowagę.
 * Osoby, które poszukują pozytywnych zmian w swoim życiu.
 * Osoby, które chcą nad sobą pracować.
 ### 3. Czy według Ciebie aplikacja jest user-friendly?
-Moim zdaniem aplikacja jest przyjazna użytkownikowi, łatwo i intuicyjnie można się po niej poruszać. Przyciski znajdują się w standardowych miejscach. Wydaje mi się, że osoba posługująca się na co dzień smartfonem i korzystająca z jakichkolwiek innych aplikacji nie powinna mieć problemu z poruszaniem się po Focusly. Wykorzystane kolory są przyjemne dla oka, zgaszone i wyciszające, tym samym nawiązują do idei aplikacji. 
+Moim zdaniem aplikacja jest przyjazna użytkownikowi, łatwo i intuicyjnie można się po niej poruszać. Przyciski znajdują się w standardowych miejscach. Wydaje mi się, że osoba posługująca się na co dzień smartfonem i korzystająca z jakichkolwiek innych aplikacji nie powinna mieć problemu z poruszaniem się po _Focusly_. Wykorzystane kolory są przyjemne dla oka, zgaszone i wyciszające, tym samym nawiązują do idei aplikacji. 
 Jedyną rzeczą, która mi osobiście przeszkadza, to to, że pomiędzy ekranami można przechodzić również przesuwając palcem z prawej do lewej strony (bądź odwrotnie). W związku z tym, że na poszczególnych ekranach znajdują się również inne treści, które można przesuwać "w poziomie", to czasami chcąc przejrzeć coś w ramach jednego ekranu, przeskakujemy do kolejnego ekranu (dokładnie widać to na **[tym filmiku](https://drive.google.com/file/d/128csSK3PX7p1QGazWJBzk-lJV4wUstDq/view?usp=share_link)**).
 ### 4. Jak byś usprawnił aplikację? Co byś poprawił? Czy masz pomysł na dodatkową funkcjonalność?
 Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bardzo dużo aplikacji posiada taką możliwość, a to dużo przyspiesza i usprawnia proces rejestracji użytkownikom Google.
@@ -156,7 +158,10 @@ Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bar
 * Korzystamy z innych narzędzi - przy testach aplikacji internetowej mamy dostęp np. do DevTools, dzięki, którym widzimy chociażby wysyłane przez stronę requesty. Przy testowaniu aplikacji natywnej nie mamy takich możliwości, dostęp do takich informacji jest ograniczony.
 * Przy testach aplikacji natywnych mamy o wiele więcej urządzeń do przetestowania - mamy różne platformy, ale też różne ich wersje oraz także każdy producent ma dodatkowo jeszcze swoje nakładki.
 * Przy aplikacjach natywnych wchodzi w grę bardzo dużo zmiennych takich jak chociażby zasięg operatora w danym urządzeniu czy aktualne obciążenie samego urządzenia.
-* Przy testowaniu aplikacji webowej adres aplikacji wpisujemy do przeglądarki, zaś przy aplikacjach natywnych pobieramy aplikację na urządzenie.
-## Subtask 4
-### [Testowanie aplikacji mobilnej i webowej w grupie](https://qa768.atlassian.net/jira/software/projects/QAC/boards/1)
-Zgłaszanie błędów z wykorzystaniem Jiry.
+* Przy testowaniu aplikacji webowej adres aplikacji wpisujemy do przeglądarki, zaś przy aplikacjach natywnych pobieramy aplikacje na urządzenie.
+## Subtask 4 - Testy aplikacji mobilnej i webowej _**SwipeTo**_ w grupie
+### [Błędy zgłoszone z wykorzystaniem Jiry](https://qa768.atlassian.net/jira/software/projects/QAC/boards/1)
+
+# TASK 5: SQL part 1
+## Subtask 1 - Krótki kurs podstaw SQL
+## Subtask 2 i 3 - Konfiguracja środowiska, wgranie bazy danych i kilka zadań na rozgrzewkę
