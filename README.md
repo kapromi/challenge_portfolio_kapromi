@@ -165,3 +165,83 @@ Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bar
 # TASK 5: SQL part 1
 ## Subtask 1 - Krótki kurs podstaw SQL
 ## Subtask 2 i 3 - Konfiguracja środowiska, wgranie bazy danych i kilka zadań na rozgrzewkę
+Poniżej znajduje się tersć zadania, użyte zapytanie oraz prt screen z uzyskanym wynikiem.
+1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
+
+   SELECT * FROM actors
+   
+   ORDER BY surname
+   
+   ![wynik1](https://user-images.githubusercontent.com/115890906/204157075-5c0e11ea-4a4c-4c13-9c72-41dc6f5ce767.jpg)
+
+2. Wyświetl film, który powstał w 2019 roku.
+
+   SELECT * FROM movies
+   
+   WHERE year_of_production = 2019
+   
+   ![wynik2](https://user-images.githubusercontent.com/115890906/204157087-b59c2e34-79aa-4718-8f26-4d5931627e82.png)
+
+3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.
+
+   SELECT * FROM movies
+   
+   WHERE year_of_production BETWEEN 1900 AND 1999
+   
+   ![wynik3](https://user-images.githubusercontent.com/115890906/204157115-6d23d6e2-3146-49ec-96fd-ec38c9d5eb13.png)
+
+4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
+
+   SELECT title, price	FROM movies
+
+   WHERE price < 7
+   
+   ![wynik4](https://user-images.githubusercontent.com/115890906/204157118-e183bd1d-00f5-42ef-8d35-87c34cab4e9b.png)
+
+5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.
+
+   SELECT * FROM actors
+   
+   WHERE actor_id >= 4 AND actor_id <=7
+   
+   ![wynik5](https://user-images.githubusercontent.com/115890906/204157123-5ee57d37-5c90-4ce5-aed3-e3eb39b85af6.png)
+
+6. Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.
+
+   SELECT * FROM customers
+   
+   WHERE customer_id = 2 OR customer_id = 4 OR customer_id = 6
+   
+   ![wynik6](https://user-images.githubusercontent.com/115890906/204157131-b36bc551-649b-4939-bc48-be109f6cdeee.png)
+
+7. Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.
+
+   SELECT * FROM customers
+   
+   WHERE customer_id IN (1,3,5)
+   
+   ![wynik7](https://user-images.githubusercontent.com/115890906/204157136-21bf81a6-b061-4258-82b5-1caeb666ed78.png)
+
+8. Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.
+
+   SELECT * FROM actors
+   
+   WHERE name LIKE 'An%'
+   
+   ![wynik8](https://user-images.githubusercontent.com/115890906/204157143-bb60743e-4061-465d-8429-03e24968a32f.png)
+
+9. Wyświetl dane klienta, który nie ma podanego adresu email.
+
+   SELECT * FROM customers
+   
+   WHERE email IS NULL
+   
+   ![wynik9](https://user-images.githubusercontent.com/115890906/204157151-03705977-a4ca-474c-89d4-95cd71081d9c.png)
+
+10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.
+
+      SELECT * FROM movies
+   
+      WHERE price >9 AND movie_id BETWEEN 2 AND 8
+   
+      ![wynik10](https://user-images.githubusercontent.com/115890906/204157167-4be82b16-b65b-410d-a53f-0769a677bbbe.png)
