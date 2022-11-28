@@ -152,7 +152,7 @@ Aplikacja _**Focusly**_ ma na celu wspierać na co dzień użytkowników w osią
 ### 3. Czy według Ciebie aplikacja jest user-friendly?
 Moim zdaniem aplikacja jest przyjazna użytkownikowi, łatwo i intuicyjnie można się po niej poruszać. Przyciski znajdują się w standardowych miejscach. Wydaje mi się, że osoba posługująca się na co dzień smartfonem i korzystająca z jakichkolwiek innych aplikacji nie powinna mieć problemu z poruszaniem się po _Focusly_. Wykorzystane kolory są przyjemne dla oka, zgaszone i wyciszające, tym samym nawiązują do idei aplikacji. 
 Jedyną rzeczą, która mi osobiście przeszkadza, to to, że pomiędzy ekranami można przechodzić również przesuwając palcem z prawej do lewej strony (bądź odwrotnie). W związku z tym, że na poszczególnych ekranach znajdują się również inne treści, które można przesuwać "w poziomie", to czasami chcąc przejrzeć coś w ramach jednego ekranu, przeskakujemy do kolejnego ekranu (dokładnie widać to na **[tym filmiku](https://drive.google.com/file/d/128csSK3PX7p1QGazWJBzk-lJV4wUstDq/view?usp=share_link)**).
-### 4. Jak byś usprawnił aplikację? Co byś poprawił? Czy masz pomysł na dodatkową funkcjonalność?
+### 4. Czy masz pomysł na dodatkową funkcjonalność?
 Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bardzo dużo aplikacji posiada taką możliwość, a to dużo przyspiesza i usprawnia proces rejestracji użytkownikom Google.
 ### 5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
 * Korzystamy z innych narzędzi - przy testach aplikacji internetowej mamy dostęp np. do DevTools, dzięki, którym widzimy chociażby wysyłane przez stronę requesty. Przy testowaniu aplikacji natywnej nie mamy takich możliwości, dostęp do takich informacji jest ograniczony.
@@ -164,6 +164,28 @@ Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bar
 
 # TASK 5: SQL part 1
 ## Subtask 1 - Krótki kurs podstaw SQL
+W ramch kursu poznałam jak działają poniższe operatory/zapytania:
+* SELECT * FROM
+* SELECT TOP
+* USE
+* GO
+* AS
+* CREATE TABLE
+* ORDER BY 
+   * ASC 
+   * DESC 
+* WHERE
+* BETWEEN
+* LIKE 
+* AND
+* OR
+* IS NULL
+* IS NOT NULL
+* IN
+* GROUP BY
+* JOIN
+* ON
+
 ## Subtask 2 i 3 - Konfiguracja środowiska, wgranie bazy danych i kilka zadań na rozgrzewkę
 Poniżej znajduje się tersć zadania, użyte zapytanie oraz prt screen z uzyskanym wynikiem.
 1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
