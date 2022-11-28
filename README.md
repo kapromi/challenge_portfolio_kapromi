@@ -57,7 +57,7 @@ Moim zdaniem to zależy. Część rzeczy faktycznie jest intuicyjna (np. ikony l
     * Pole _Telefon_ - nie wiadomo w jakiej formie ma zostać wpisany, czy jako ciąg znaków czy z kierunkowym kraju czy bez. Zasugerowałabym tu sztywny format, w którym należy wprowadzić numer telefonu.
 6. Pole _Search_ w widoku listy graczy szuka we wszystkich parametrach gracza - nawet tych widocznych dopiero w szczegółach. Na początku nie było to dla mnie jasne i myślałam, że wyszukiwarka źle działa, bo w pokazanych wynikach na pierwszy rzut oka nie było tego czego szukałam.
 7. Pola _Web match_, _General_ czy _Rating_ w zakładce edycji/dodawania meczy - nie rozumiem co należy wpisać w tych polach, brakuje objaśnienia.
-### Błędy znalezione podczas testowania eksploracyjnego
+### Błędy znalezione podczas testowania eksploracyjnego :warning::bug:
 1. Podczas logowania, mimo wybrania języka polskiego komunikat o wprowadzeniu błędnego hasła lub nie wprowadzeniu go w ogóle pojawia się w języku angielskim.
 2. Mimo tego, że wybrany mamy język polski, to w zakładce _Gracze_ w prawym górnym rogu listy opisy ikon są po angielsku tj. _Download CSV, Print, View Columns, Filter Table_.
 3. Po wyeksportowaniu listy graczy do pliku CSV widać, że dane w pliku nie zawierają polskich znaków.
@@ -115,7 +115,7 @@ Ponadto poniżej wypisałam punkty, które może nie dotyczą błędów, ale war
 Test cases do każdego User Story znajdują się w osobnych arkuszach.
 ## Subtask 2 - Pisanie przypadków testowych na podstawie “własnych doświadczeń"
 ### [Przypadki testowe stworzone na podstawie "własnych doświadczeń"](https://docs.google.com/spreadsheets/d/1_wQmoDmWLG3PKkCRIPzUGjysDMefc4K_/edit?usp=sharing&ouid=107944882906340188087&rtpof=true&sd=true)
-## Subtask 3 - Po co piszemy test case'y?
+## Subtask 3 - Po co piszemy test case'y? :thinking:
 ### Pisanie przypadków testowych pozwala:
 * udokumentować w czytelny sposób różne możliwości obsłużenia modułów w ramach danej aplikacji,
 * testować funkcjonalności,
@@ -131,7 +131,7 @@ Test cases do każdego User Story znajdują się w osobnych arkuszach.
 ## Subtask 2 - Testowanie aplikacji webowej 
 ### [Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
 Testowanie aplikacji webowej _Scouts_odbyło się zgodnie z utworzonymi w ramach taska 2 przypadkami testowymi. Stworzone test case'y opierają się zarówno o User Story jak i o "własne doświadczenia".
-## Subtask 3 - Raport z wykonanych testów
+## Subtask 3 - Raport z wykonanych testów :bar_chart:
 ### [Krótki raport z wykonanych testów aplikacji webowej _**Scouts**_](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
 # TASK 4: Testowanie aplikacji mobilnych
@@ -152,7 +152,7 @@ Aplikacja _**Focusly**_ ma na celu wspierać na co dzień użytkowników w osią
 ### 3. Czy według Ciebie aplikacja jest user-friendly?
 Moim zdaniem aplikacja jest przyjazna użytkownikowi, łatwo i intuicyjnie można się po niej poruszać. Przyciski znajdują się w standardowych miejscach. Wydaje mi się, że osoba posługująca się na co dzień smartfonem i korzystająca z jakichkolwiek innych aplikacji nie powinna mieć problemu z poruszaniem się po _Focusly_. Wykorzystane kolory są przyjemne dla oka, zgaszone i wyciszające, tym samym nawiązują do idei aplikacji. 
 Jedyną rzeczą, która mi osobiście przeszkadza, to to, że pomiędzy ekranami można przechodzić również przesuwając palcem z prawej do lewej strony (bądź odwrotnie). W związku z tym, że na poszczególnych ekranach znajdują się również inne treści, które można przesuwać "w poziomie", to czasami chcąc przejrzeć coś w ramach jednego ekranu, przeskakujemy do kolejnego ekranu (dokładnie widać to na **[tym filmiku](https://drive.google.com/file/d/128csSK3PX7p1QGazWJBzk-lJV4wUstDq/view?usp=share_link)**).
-### 4. Czy masz pomysł na dodatkową funkcjonalność?
+### 4. Czy masz pomysł na dodatkową funkcjonalność? :bulb:
 Dodałabym możliwość rejestrowania się/logowania kontem Google - obecnie bardzo dużo aplikacji posiada taką możliwość, a to dużo przyspiesza i usprawnia proces rejestracji użytkownikom Google.
 ### 5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?
 * Korzystamy z innych narzędzi - przy testach aplikacji internetowej mamy dostęp np. do DevTools, dzięki, którym widzimy chociażby wysyłane przez stronę requesty. Przy testowaniu aplikacji natywnej nie mamy takich możliwości, dostęp do takich informacji jest ograniczony.
@@ -186,7 +186,7 @@ W ramch kursu poznałam jak działają poniższe operatory/zapytania:
 * JOIN
 * ON
 
-## Subtask 2 i 3 - Konfiguracja środowiska, wgranie bazy danych i kilka zadań na rozgrzewkę
+## Subtask 2 i 3 - Konfiguracja środowiska, wgranie bazy danych i zadania na rozgrzewkę :man_technologist:
 Poniżej znajduje się tersć zadania, użyte zapytanie oraz prt screen z uzyskanym wynikiem.
 1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
 
