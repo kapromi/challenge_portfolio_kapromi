@@ -2,7 +2,7 @@
 ## Subtask 1 - Wyciągamy karteczki...
 10/10 punktów :nerd_face:
 ## Subtask 2 - Dodawanie repozyterium do GitHub
-[Moje pierwsze repozyterium](https://github.com/kapromi/challenge_portfolio_kapromi)
+[Moje pierwsze repozytorium](https://github.com/kapromi/challenge_portfolio_kapromi)
 ## Subtask 3 - Dlaczego zdecydowałaś się na udział w QA Challenge?
 Cześć, nazywam się **Karolina** i w końcu dojrzałam do decyzji, żeby nieco zboczyć z dotychczasowej ścieżki zawodowej :upside_down_face: 
 
