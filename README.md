@@ -130,7 +130,7 @@ Test cases do każdego User Story znajdują się w osobnych arkuszach.
 ### [Błędy w aplikacji webowej _Scouts_](https://docs.google.com/spreadsheets/d/1-4lGA37yqhxEcCGebnjHd-BQaUX-NjgK/edit?usp=share_link&ouid=107944882906340188087&rtpof=true&sd=true)
 ## Subtask 2 - Testowanie aplikacji webowej 
 ### [Realizacja test case'ów](https://drive.google.com/drive/folders/1mwPniAh1h5bfJQiK4dxhk2rBqBBpoDLr?usp=share_link)
-Testowanie aplikacji webowej _Scouts_odbyło się zgodnie z utworzonymi w ramach taska 2 przypadkami testowymi. Stworzone test case'y opierają się zarówno o User Story jak i o "własne doświadczenia".
+Testowanie aplikacji webowej _Scouts_ odbyło się zgodnie z utworzonymi w ramach taska 2 przypadkami testowymi. Stworzone test case'y opierają się zarówno o User Story jak i o "własne doświadczenia".
 ## Subtask 3 - Raport z wykonanych testów :bar_chart:
 ### [Krótki raport z wykonanych testów aplikacji webowej _**Scouts**_](https://drive.google.com/file/d/10pS4h_8xw_9-x6jY3wR6UB_p3k_2fu36/view?usp=share_link)
 
