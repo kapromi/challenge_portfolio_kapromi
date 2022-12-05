@@ -267,3 +267,135 @@ Poniżej znajduje się tersć zadania, użyte zapytanie oraz prt screen z uzyska
       WHERE price >9 AND movie_id BETWEEN 2 AND 8
    
       ![wynik10](https://user-images.githubusercontent.com/115890906/204157167-4be82b16-b65b-410d-a53f-0769a677bbbe.png)
+      
+# TASK 6: SQL part 2
+## Subtask 1 - ciąg dalszy zadań z podstaw SQL
+11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd 🙈
+
+      UPDATE customers 
+   
+      SET surname = "Miler" 
+   
+      WHERE customer_id = 3
+   
+      ![wynik11](https://user-images.githubusercontent.com/115890906/205744799-214f5669-8413-4f7f-be75-83071c3bda66.png)
+
+12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.
+
+      SELECT c.name, c.email 
+   
+      FROM customers AS c 
+   
+      JOIN sale AS s 
+   
+      ON c.customer_id = s.customer_id 
+   
+      WHERE s.movie_id = 4;
+   
+      ![wynik12](https://user-images.githubusercontent.com/115890906/205744915-4c48ea92-45f3-43e3-bf38-f1486a2c3211.png)
+
+
+13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: [pati@mail.com](mailto:pati@mail.com)
+   
+      UPDATE customers 
+   
+      SET email = "pati@mail.com" 
+   
+      WHERE customer_id = 4;
+   
+      ![wynik13](https://user-images.githubusercontent.com/115890906/205745070-04abc686-967c-4517-9d96-ceca03aac8ef.png)
+
+14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).
+
+      SELECT c.name, c.surname, m.title 
+   
+      FROM customers AS c 
+   
+      INNER JOIN sale AS s 
+   
+      ON c.customer_id = s.customer_id 
+   
+      INNER JOIN movies AS m 
+   
+      ON s.movie_id = m.movie_id
+   
+      ![wynik14](https://user-images.githubusercontent.com/115890906/205745167-86e9851f-2e86-48eb-8c3f-08a6553a2ba9.png)
+
+15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag
+
+      ALTER TABLE customers ADD pseudonym VARCHAR (3);
+   
+      UPDATE customers AS c 
+   
+      SET pseudonym = (SELECT CONCAT(LEFT (name,2), RIGHT(surname,1)) FROM CUSTOMERS AS c2 WHERE c.customer_id=c2.customer_id)
+
+      ![wynik15](https://user-images.githubusercontent.com/115890906/205745291-fac7cff5-acfa-43b8-b8a0-f9f7aaa24fe3.png)
+
+16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.
+   
+      SELECT DISTINCT m.title 
+   
+      FROM movies AS m 
+   
+      JOIN sale AS s 
+   
+      ON m.movie_id=s.movie_id;
+
+      ![wynik16](https://user-images.githubusercontent.com/115890906/205745416-956445b8-043c-4b07-a96a-bb403f9a8160.png)
+
+17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)
+
+      (SELECT name FROM actors
+   
+      UNION
+   
+      SELECT name FROM customers) 
+   
+      ORDER BY name
+   
+      ![wynik17](https://user-images.githubusercontent.com/115890906/205745502-59b6d100-abb5-49eb-9154-e0920376a3a7.png)
+
+18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).
+
+      UPDATE movies 
+   
+      SET price = price + 2.5
+   
+      WHERE year_of_production > 2000
+     
+      ![wynik18](https://user-images.githubusercontent.com/115890906/205745636-c3ec084b-ceb9-4c0a-bd82-fa4248ca83fb.png)
+
+19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał
+
+      SELECT a.name, a.surname, m.title 
+   
+      FROM actors AS a 
+   
+      JOIN cast AS c
+   
+      ON a.actor_id=c.actor_id 
+      
+      JOIN movies AS m 
+   
+      ON m.movie_id=c.movie_id 
+   
+      WHERE a.actor_id = 4;
+   
+      ![wynik19](https://user-images.githubusercontent.com/115890906/205745778-2b4947a9-ffe8-4eed-b57f-31399f97f97b.png)
+
+20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = [honia@mail.com](mailto:honia@mail.com) oraz pseudonym = Hoa
+
+      INSERT INTO customers
+   
+      (customer_id, name, surname, email, pseudonym)
+   
+      VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+   
+      ![wynik20](https://user-images.githubusercontent.com/115890906/205745845-016ea886-899e-449b-9e3c-b896ac127013.png)
+
+## Subtask 2 - Test
+Intuicja nie zawiodła, ale jest miejsce do nauki :nerd_face: 
+
+![wynik](https://user-images.githubusercontent.com/115890906/205746740-6d1cf0af-7842-4e3c-8b84-ecfee55e2cc3.png)
+
+## Subtask 3 - Tworzymy portfolio
