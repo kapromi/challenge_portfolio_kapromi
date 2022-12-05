@@ -398,4 +398,6 @@ Intuicja nie zawiodła, ale jest miejsce do nauki :nerd_face:
 
 ![wynik](https://user-images.githubusercontent.com/115890906/205746740-6d1cf0af-7842-4e3c-8b84-ecfee55e2cc3.png)
 
-## Subtask 3 - Tworzymy portfolio
+## Subtask 3 - Tworzymy portfolio :star_struck:
+[Moje portfolio Testera Manualnego](https://github.com/kapromi/portfolio)
+
