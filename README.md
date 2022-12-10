@@ -389,7 +389,7 @@ Poniżej znajduje się tersć zadania, użyte zapytanie oraz prt screen z uzyska
    
       (customer_id, name, surname, email, pseudonym)
    
-      VALUES ('7', 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+      VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
    
       ![wynik20](https://user-images.githubusercontent.com/115890906/205745845-016ea886-899e-449b-9e3c-b896ac127013.png)
 
